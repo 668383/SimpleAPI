@@ -13,6 +13,6 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: CmdLine@2
 - script: dotnet build --configuration $(buildConfiguration)
+- task: CmdLine@2
   displayName: 'dotnet build $(buildConfiguration)'
