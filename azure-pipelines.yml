@@ -18,8 +18,8 @@ steps:
   displayName: 'Use .NET Core sdk'
   inputs:
     packageType: sdk
-    version: 5.0.101
-
+    version: 2.2.203
+    
 - task: DotNetCoreCLI@2
   inputs:
     command: test
