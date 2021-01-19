@@ -1,0 +1,17 @@
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: master
+jobs:
+- job: Job_1
+  displayName: Agent job
+  pool:
+    vmImage: windows-2019
+  steps:
+  - checkout: self
+- job: Job_2
+  displayName: Agentless job
+  pool: server
+  steps: []
+...
